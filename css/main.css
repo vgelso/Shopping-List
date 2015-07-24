@@ -1,0 +1,112 @@
+html {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+/*Navigationbar */
+
+.top-navigation {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	color: #fff;
+	height: 70px;
+	}
+
+.content {
+	/*padding: 0em 6em;*/
+	width: 60.625em;
+	margin: 0 auto;
+	
+}
+
+.header {
+	font-size: 2em;
+	text-align: center;
+	color: #838994;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	margin-top: 0.6em;
+	letter-spacing: 0.03em;
+	padding-left: 3em;
+}
+
+.menu-icon {
+	float: right;
+	font-size: 0.7em;
+}
+
+.menu-icon > a {
+	text-decoration: none;
+}
+
+.shopping-cart {
+	float: left;
+	padding-left: 0.5em;
+	margin-top: -0.7em;
+}
+/*.top-navigation .content h1 {
+	float: center;
+	display: inline-block;*/
+
+.introduction {
+	padding-top: 200px;
+	background-image: url("../images/fruit-image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 27em;
+}
+
+/*List*/
+
+#add-item {
+	background-color: #fff;
+	text-align: center;
+	padding: 0.8em 0;
+	margin: -2.5em 0em 2em 34em;
+	font-family: 'Roboto', sans-serif;
+	color: #73161B;
+	font-weight: 500;
+	font-size: 1.0625em;
+	border-radius: 40em 2em;
+}
+
+.added {
+	background-color: #fff;
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 0.4em 20em 0em 20em;
+	font-family: 'Roboto', sans-serif;
+	color:#838994;
+	font-weight: 500;
+	border-radius: 40em;
+}
+
+
+.delete-img {
+	height: 35px;
+	float: left;
+	margin-top: -0.5em;
+	margin-left: 0.5em;
+}
+
+.checked-img {
+	height: 25px;
+	float: right;
+	margin-top: -0.2em;
+	margin-right: 0.5em;
+}
+
+/*Footer*/
+
+footer {
+	text-align: center;
+	margin: 1em 0em;
+	font-family: 'Roboto', sans-serif;
+	color: #838994;
+}
