@@ -43,6 +43,7 @@ body {
 
 .menu-icon > a {
 	text-decoration: none;
+	color: black;
 }
 
 .shopping-cart {
@@ -89,14 +90,14 @@ body {
 
 
 .delete-img {
-	height: 35px;
+	height: 25px;
 	float: left;
-	margin-top: -0.5em;
+	margin-top: -0.2em;
 	margin-left: 0.5em;
 }
 
 .checked-img {
-	height: 25px;
+	height: 26px;
 	float: right;
 	margin-top: -0.2em;
 	margin-right: 0.5em;
