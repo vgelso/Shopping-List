@@ -1,7 +1,7 @@
 var rowNum = 0; // roq number
 
 $(document).ready(function() {
-
+	$('#menu').hide();
 	$(document).keypress(function(event){
 		var keycode;
 
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	        //alert($('#add-item').val());
 	        var str = $( "#add-item" ).val();
 	        if( str.length === 0 ) {
-	        	alert('Please enter an Item');
+	        	//alert('Please enter an Item');
 	    	}
 	    	else {
 	    		var html = "<p class=\"added\" id=\"row_" + rowNum + "\"><img class=\"delete-img\" id=\"delete-img_" + rowNum + "\" src=\"images/delete-image2.png\" alt=\"Delete image\"/>" +
@@ -35,18 +35,25 @@ $(document).ready(function() {
 
 	$("body").on("click", ".delete-img", function(e) {
 		var parent = getParent(e);
-		alert(parent);
+		//alert(parent);
 		$(parent).fadeOut("fast", function() { $(this).remove() });
 	});
 
 	$("body").on("click", ".checked-img", function(e) {
 		var previousElement = "#" + $("#" + e.target.id).prev().attr("id");
 		var parent = getParent(e);
-		alert(parent);
+		//alert(parent);
 		$(previousElement).wrap("<strike>");
 		$(parent).animate( { backgroundColor: "#99CC99" }, "slow");
 		//$(parent).css("background-color", "#006633");	
 		$(parent).css("color", "#3D5C5C");	
+		
+	});
+
+	$('.shopping-cart').click(function() {
+		alert("cart clicked");
+		$('#menu').show();
+		$('#menu').menu();
 	});
 
 });
@@ -56,9 +63,14 @@ function getParent(e) {
 }
 
 function checkRowCount() {
-	// get current number of rows
+	 //get current number of rows
 	var count = $(".slider-container").children().length;
 	if (count > 5) {
-		// slide content to left
+	//$("#slide").animate({width:'toggle'},650);
+	
+
+
+
+
 	}
 }

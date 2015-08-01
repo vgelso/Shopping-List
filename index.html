@@ -5,28 +5,65 @@
 	<title>My Shopping List</title>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/gradient.css">
+
 	<script src="http://code.jquery.com/jquery.min.js"></script>
-	<script src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js'></script>
+	<script src='http://code.jquery.com/ui/1.9.1/jquery-ui.min.js'></script>
 	<script src="js/script.js"></script>
 	<script src="js/jssor.js"></script>
 	<script src="js/jssor.slider.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
 	<nav class="top-navigation">
 		<div class="content">
-			<img  class="shopping-cart" src="images/shopping-cart.png" alt="shopping-cart" data-w="254" data-h="180" style="width: 60px; display: block;">
+			<a href="#"><img  class="shopping-cart" src="images/shopping-cart.png" alt="shopping-cart" data-w="254" data-h="180" style="width: 60px; display: block;"></a>
 			<h2 class="header">My Shopping List <span class="menu-icon"><a href="#">&#9776; Menu </a></span></h2>
 		</div>
 	</nav>
 	<section class="introduction">
 	<input id="add-item" type="text" name="add-item" autocomplete "off" placeholder="Add Item"/>
-	<div class="slider-container"></div>
+	<div class="scrollbar" id="style-1" style="overflow: auto;"><div class="slider-container" class="force-overflow"></div></div>
+	<!--<img class="arrow-left" src="images/arrow-left.jpg">
+	<img class="arrow-right" src="images/arrow-right.jpg">-->
+
+	<!--<ul id="menu">
+  <li class="ui-state-disabled">Aberdeen</li>
+  <li>Ada</li>
+  <li>Adamsville</li>
+  <li>Addyston</li>
+  <li>Delphi
+    <ul>
+      <li class="ui-state-disabled">Ada</li>
+      <li>Saarland</li>
+      <li>Salzburg an der schönen Donau</li>
+    </ul>
+  </li>
+  <li>Saarland</li>
+  <li>Salzburg
+    <ul>
+      <li>Delphi
+        <ul>
+          <li>Ada</li>
+          <li>Saarland</li>
+          <li>Salzburg</li>
+        </ul>
+      </li>
+      <li>Delphi
+        <ul>
+          <li>Ada</li>
+          <li>Saarland</li>
+          <li>Salzburg</li>
+        </ul>
+      </li>
+      <li>Perch</li>
+    </ul>
+  </li>
+  <li class="ui-state-disabled">Amesville</li>
+</ul>-->
+
 	</section>
 
-
-	<footer>
-		&copy; Gelso
-	</footer>
+		<h4>&copy; Gelso</h4>
 </body>
 </html>
